@@ -1,0 +1,108 @@
+body{
+    background-color: #F7ECDE;
+    font-family: "PT Sans Caption", sans-serif;
+    color: rgb(33, 37, 41);
+}
+*::selection{
+    background-color: rgb(254, 194, 96);;
+}
+.btn-gold{
+    padding: 6px 48px;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #d1512d;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #d1512d;
+    --bs-btn-active-border-color: #a03315;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #d1512d;
+    --bs-btn-disabled-border-color: #d1512d;
+}
+.btn-visit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+header h1{
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+}
+header h1::after{
+    content: "";
+    position: absolute;
+    background-color: #fec260;
+    right: 40%;
+    left: 40%;
+    bottom: 5px;
+    height: 20%;
+    z-index: -1;
+    transition: height 350ms;
+}
+header h1:hover::after{
+    height: 45%;
+}
+
+/* form start */
+.form-sec h1{
+    border-top: 2px dotted;
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-sec h1::selection{
+    background-color: rgba(254, 193, 96, 0.7);
+}
+.form-sec .form .inner{
+    border-bottom: 2px dotted;
+}
+.form-sec .form .form-control:focus{
+    box-shadow:0 0 0 0.25rem #fec26055;
+    border-color: rgb(254, 194, 96);
+
+}
+.form-sec .form .is-valid:focus{
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25,135,84,.25);
+}
+.form-sec .form .is-invalid:focus{
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.25rem rgba(220,53,69,.25);
+}
+
+/* model start */
+.modal .icon{
+    width: 20px;
+    height: 20px;
+}
+.modal .icon-red{
+    background-color: #F15F5D;
+}
+.modal .icon-yellow{
+    background-color: #FEBE2E;
+}
+.modal .icon-green{
+    background-color: #4DB748;
+}
+.modal .rules h1{
+    font-family: "Bree Serif", serif;
+    font-size: 1.3125rem;
+
+}
+.modal .rules p{
+    font-size: 1.125rem;
+    text-indent: 10px;
+}
+.modal .rules p i{
+    color: rgb(187, 65, 32);
+}
